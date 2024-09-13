@@ -1,8 +1,10 @@
+import MainLayout from "./components/layouts/MainLayout";
+
 function App() {
     return (
-        <>
-            <h1>Hello World</h1>
-        </>
+        <main>
+            <MainLayout />
+        </main>
     );
 }
 

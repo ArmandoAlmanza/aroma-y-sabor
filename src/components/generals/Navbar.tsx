@@ -9,6 +9,20 @@ interface Props {
 }
 
 const Navbar = ({ navOpened, setNavOpened }: Props) => {
+    const links = [
+        {
+            text: "Inicio",
+            path: "/",
+        },
+        {
+            text: "Menu",
+            path: "/",
+        },
+        {
+            text: "Blog",
+            path: "/",
+        },
+    ];
     return (
         <nav
             className={clsx(
@@ -23,7 +37,11 @@ const Navbar = ({ navOpened, setNavOpened }: Props) => {
                 className="absolute right-10 top-5 text-4xl hover:text-purple-400 transition-colors duration-300 ease-in-out"
                 onClick={() => setNavOpened(false)}
             />
-            <Link to={"/"}>Hola</Link>
+            {links.map((link, i) => (
+                <Link to={link.path} key={i}>
+                    {link.text}
+                </Link>
+            ))}
         </nav>
     );
 };

@@ -15,7 +15,7 @@ const Header = () => {
                 />
             </div>
             <FaBars
-                className="text-5xl hover:cursor-pointer"
+                className="text-3xl hover:cursor-pointer"
                 onClick={() => setMenuOpened(!menuOpened)}
             />
             <Navbar navOpened={menuOpened} setNavOpened={setMenuOpened} />

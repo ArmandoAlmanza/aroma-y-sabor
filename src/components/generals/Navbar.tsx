@@ -26,15 +26,15 @@ const Navbar = ({ navOpened, setNavOpened }: Props) => {
     return (
         <nav
             className={clsx(
-                "grid row-span-2 gap-5 items-start left-0 text-white z-50 w-full fixed h-[90%] text-center backdrop:blur-lg transition-[top] duration-500 px-7 py-10 sm:hidden bg-[#30333A]",
+                "grid row-span-2 gap-5 items-start left-0 text-white z-50 w-full fixed h-[54%] text-center backdrop:blur-lg transition-[top] duration-500 px-7 py-10 sm:hidden bg-[#30333A]",
                 {
-                    "top-20": navOpened,
+                    "top-0": navOpened,
                     "-top-full": !navOpened,
                 }
             )}
         >
             <FaXmark
-                className="absolute right-10 top-5 text-4xl hover:text-purple-400 transition-colors duration-300 ease-in-out"
+                className="absolute right-4 top-6 text-4xl hover:text-purple-400 transition-colors duration-300 ease-in-out"
                 onClick={() => setNavOpened(false)}
             />
             <div className="flex flex-col gap-4 items-start content-center flex-wrap">

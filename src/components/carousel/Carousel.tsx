@@ -22,7 +22,7 @@ const Carousel: React.FC<CarouselProps> = ({ children }) => {
     };
 
     return (
-        <div className="relative w-full max-w-sm mx-auto overflow-hidden -z-[2]">
+        <div className="relative w-full max-w-sm mx-auto overflow-hidden -z-10">
             <button
                 onClick={prevSlide}
                 className="absolute left-0 top-1/2 transform -translate-y-1/2 p-2 bg-white rounded-full shadow-md z-20 pointer-events-auto"

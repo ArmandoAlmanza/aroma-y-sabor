@@ -40,9 +40,9 @@ const LandingPage = () => {
                     Order now <FaBagShopping />
                 </Link>
             </section>
-            <section className="container mx-auto">
+            <section className="container mx-auto px-2">
                 <h2 className="text-[35px] font-semibold ">Best Sellers</h2>
-                <div className="px-5">
+                <div>
                     <Carousel>
                         {data.map((card, index) => (
                             <Card key={index} {...card} />

@@ -1,0 +1,23 @@
+[
+    {
+        "name": "American Coffee",
+        "price": 40.0,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id elit sodales, dictum tortor et, facilisis lacus. Cras venenatis tristique sodales.",
+        "hot": true,
+        "image": "/cafes/black.webp"
+    },
+    {
+        "name": "Specian Coffee",
+        "price": 80.0,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id elit sodales, dictum tortor et, facilisis lacus. Cras venenatis tristique sodales.",
+        "hot": true,
+		"image": "/cafes/dalgona.jpeg"
+    },
+    {
+        "name": "Apple Crispy Latte",
+        "price": 60.0,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id elit sodales, dictum tortor et, facilisis lacus. Cras venenatis tristique sodales.",
+        "hot": false,
+		"image": "/cafes/black.webp"
+    }
+]

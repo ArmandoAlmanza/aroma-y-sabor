@@ -16,7 +16,11 @@ const Navbar = ({ navOpened, setNavOpened }: Props) => {
         },
         {
             text: "Menu",
-            path: "/",
+            path: "/menu",
+        },
+        {
+            text: "About us",
+            path: "/about",
         },
         {
             text: "Blog",
@@ -26,7 +30,7 @@ const Navbar = ({ navOpened, setNavOpened }: Props) => {
     return (
         <nav
             className={clsx(
-                "grid row-span-2 gap-5 items-start left-0 text-white z-50 w-full fixed h-[54%] text-center backdrop:blur-lg transition-[top] duration-500 px-7 py-10 sm:hidden bg-[#30333A]",
+                "grid row-span-2 gap-5 items-start left-0 text-white z-50 w-full fixed h-[98%] text-center backdrop:blur-lg transition-[top] duration-500 px-7 py-10 sm:hidden bg-[#30333A]",
                 {
                     "top-0": navOpened,
                     "-top-full": !navOpened,
@@ -43,6 +47,7 @@ const Navbar = ({ navOpened, setNavOpened }: Props) => {
                         className="relative mx-auto text-gray-200 font-semibold text-xl transition-colors duration-300 after:content-[''] after:w-0 after:h-[2px] after:bg-purple-400 after:absolute after:left-0 after:-bottom-2 after:transition-[width] after:duration-300 hover:text-white hover:after:w-5"
                         to={link.path}
                         key={i}
+                        onClick={() => setNavOpened(false)}
                     >
                         {link.text}
                     </Link>

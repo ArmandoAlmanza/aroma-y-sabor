@@ -51,33 +51,36 @@ const LandingPage = () => {
                 </div>
             </section>
 
-            <section>
+            <section className="bg-[url(/pattern.webp)] bg-center bg-cover bg-repeat h-[300px] grid place-items-center gap-5 place-content-center px-4">
+                <h2 className="px-4 text-[30px] font-semibold ">
+                    We have a newsletter!
+                </h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Soluta repellendus quasi doloribus corporis officiis
-                    repudiandae quae ipsam nemo earum cupiditate fuga fugit
-                    ipsa, veritatis unde, velit, eum eligendi. Eum, labore!
-                    Magni ullam ex iusto soluta at laudantium eos iure. Repellat
-                    inventore incidunt omnis perspiciatis! Saepe, magnam nihil
-                    optio recusandae velit quas laborum voluptatem, itaque
-                    tenetur et quae autem labore nam? Delectus aspernatur sequi,
-                    aut voluptatem repudiandae porro quod tempora quos.
-                    Reiciendis necessitatibus earum nulla amet molestias. Labore
-                    iste unde officiis reprehenderit earum quia dolore aut modi
-                    eligendi. Earum, natus pariatur? Quae, quasi minus? Quae,
-                    distinctio. Sed porro deleniti repudiandae? Sint deleniti
-                    magnam quisquam similique impedit odio modi quo, ea dolorum
-                    animi maiores repudiandae consequatur, aliquam, quasi harum
-                    provident accusantium iure? Est voluptate sequi ab voluptas
-                    consequatur modi aperiam dignissimos qui culpa natus
-                    ratione, pariatur quaerat ipsa voluptatum unde quibusdam
-                    exercitationem veritatis? Quisquam labore tenetur asperiores
-                    placeat excepturi. Quam, veritatis exercitationem?
-                    Architecto quo explicabo quae modi ullam at officiis fugit
-                    minus asperiores est voluptate, a veritatis. Earum minima
-                    facere qui laborum fugiat, officiis porro velit atque
-                    perferendis, odio delectus eaque neque.
+                    if you want to know special recipes or know more about the
+                    world of coffee, <strong>subscribe for free!</strong>
                 </p>
+                <div className="flex">
+                    <input
+                        type="text"
+                        className="px-3 py-2 bg-brown-light font-bold"
+                        placeholder="armando@correo.com"
+                    />
+                    <button className="px-3 py-2 font-bold bg-brown-dark text-white rounded-tr-xl rounded-br-xl">
+                        Subscribe
+                    </button>
+                </div>
+            </section>
+
+            <section className="p-5 grid gris">
+                <h2 className="px-4 text-[35px] font-semibold ">
+                    Visit our Blog
+                </h2>
+                <button
+                    className="bg-brown-light px-4 py-2 rounded-xl font-bold"
+                    onClick={() => alert("Still WIP")}
+                >
+                    Visit
+                </button>
             </section>
         </div>
     );

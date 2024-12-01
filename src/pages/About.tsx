@@ -4,7 +4,7 @@ import person from "/persona.jpg";
 const About = () => {
     return (
         <main className="grid gap-4">
-            <h2 className="px-4 text-[35px] font-semibold ">About me</h2>
+            <h2 className="px-4 text-[35px] font-semibold ">About us</h2>
             <img src={person} alt="Image of the owner" />
             <p className="px-4">
                 Aroma y Sabor es el resultado del sueño de Montserrat Dávalos,
@@ -22,7 +22,7 @@ const About = () => {
                 propia cafetería.
             </p>
             <section className="mb-4">
-                <h2 className="px-4 text-[35px] font-semibold ">
+                <h2 className="px-4 text-[35px] font-semibold">
                     Our Services
                 </h2>
                 <div className="grid grid-cols-3">

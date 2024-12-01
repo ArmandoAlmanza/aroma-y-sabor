@@ -1,30 +1,11 @@
 import { FaBagShopping } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-import Carousel from "../components/carousel/Carousel";
-import Card from "../components/carousel/Card";
 
 const LandingPage = () => {
-    const data = [
-        {
-            title: "Card 1",
-            description: "This is card 1",
-            image: "/avatar.png",
-        },
-        {
-            title: "Card 2",
-            description: "This is card 2",
-            image: "/avatar.png",
-        },
-        {
-            title: "Card 3",
-            description: "This is card 3",
-            image: "/avatar.png",
-        },
-    ];
     return (
         <div className="grid gap-5">
             <section className="grid place-items-center gap-6">
-                <h1 className="text-[50px] text-brown-dark text-center font-bold">
+                <h1 className="text-[45px] text-brown-dark text-center font-bold px-2">
                     Aroma y Sabor
                 </h1>
                 <div className="-z-50 relative bg-[url('/hero-mobile.jpg')] bg-cover h-[200px] bg-center w-full grid place-content-center">
@@ -40,17 +21,7 @@ const LandingPage = () => {
                     Order now <FaBagShopping />
                 </Link>
             </section>
-            <section className="container mx-auto px-2">
-                <h2 className="text-[35px] font-semibold ">Best Sellers</h2>
-                <div>
-                    <Carousel>
-                        {data.map((card, index) => (
-                            <Card key={index} {...card} />
-                        ))}
-                    </Carousel>
-                </div>
-            </section>
-
+            <section></section>
             <section className="bg-[url(/pattern.webp)] bg-center bg-cover bg-repeat h-[300px] grid place-items-center gap-5 place-content-center px-4">
                 <h2 className="px-4 text-[30px] font-semibold ">
                     We have a newsletter!
@@ -71,16 +42,21 @@ const LandingPage = () => {
                 </div>
             </section>
 
-            <section className="p-5 grid gris">
+            <section className="p-5 grid gap-2">
                 <h2 className="px-4 text-[35px] font-semibold ">
-                    Visit our Blog
+                    Visit our Blog!
                 </h2>
-                <button
-                    className="bg-brown-light px-4 py-2 rounded-xl font-bold"
-                    onClick={() => alert("Still WIP")}
+
+                <p>
+                    If you want to know some recieps and tips for make your'e
+                    dailly coffe our blog is the best place to find it
+                </p>
+                <Link
+                    className="bg-brown-light px-4 py-2 rounded-xl font-bold text-center"
+                    to="/blog"
                 >
                     Visit
-                </button>
+                </Link>
             </section>
         </div>
     );

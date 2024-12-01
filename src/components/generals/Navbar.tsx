@@ -24,7 +24,7 @@ const Navbar = ({ navOpened, setNavOpened }: Props) => {
         },
         {
             text: "Blog",
-            path: "/",
+            path: "/blog",
         },
     ];
     return (
